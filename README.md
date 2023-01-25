@@ -8,14 +8,14 @@
 
 <h2 align="center"> Usage </h2>
 <p align="center"> You can access my project, Weather Forecast Station, by simply clicking on this highlighted text. </p>
-<p align="center"> <a href="https://michaelx626.github.io/Most-Secure-Password-Generator/index.html" target="_blank"> Here </a> </p>
+<p align="center"> <a href="https://michaelx626.github.io/Weather-Forecast-Station/index.html" target="_blank"> Here </a> </p>
 
 <h2 align="center"> Screenshots </h2>
 
-![text](https://github.com/Michaelx626/Most-Secure-Password-Generator/blob/main/assets/CSS/Screen%20Shot%202022-12-22%20at%2011.13.55%20PM.png).
+![text](https://github.com/Michaelx626/Weather-Forecast-Station/blob/main/assets/Screenshots/Screen%20Shot%202023-01-24%20at%2010.15.02%20PM.png)
 
 <h2 align="center">  Credit </h2>
 <p align="center"> N/A
 
 <h2 align="center"> Licenses </h2>
-<p align="center"> Copyright (c) 2022 Michael Lin </p>
+<p align="center"> Copyright (c) 2023 Michael Lin </p>
