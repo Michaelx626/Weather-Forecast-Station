@@ -21,8 +21,13 @@ userHistory.forEach(function (userCity) {
   historyList.appendChild(createList);
 });
 
+function clearSection(){
+  forecastContainer.textContent = '';
+}
+
 function getWeather(event, city) {
   event.preventDefault();
+  clearSection();
   var userInputCity = city || cities.value.trim();
   var currentUrl =
     "https://api.openweathermap.org/data/2.5/weather?q=" +
@@ -59,7 +64,7 @@ function getWeather(event, city) {
         console.log(data);
         var condition = data.weather[0].icon;
         var weatherEmoji =
-          "http://openweathermap.org/img/wn/" + condition + "@2x.png";
+          "https://openweathermap.org/img/wn/" + condition + "@2x.png";
         var emoji = document.createElement("img");
         var convertKelvin = (data.main.temp - 273.15) * (9 / 5) + 32;
         var rounded = (Math.round(convertKelvin * 100) / 100).toFixed(2);
@@ -105,7 +110,7 @@ function displayforecastWeatherCard({ dt_txt, weather, main, wind }) {
         <div class="card h-50">
         <div class="card-body bg-dark">
             <h5 class="card-title text-white">${dt_txt.slice(0,11)}</h5>
-            <p class="card-text text-white"><img src="http://openweathermap.org/img/wn/${weather[0].icon}@2x.png"></p>
+            <p class="card-text text-white"><img src="https://openweathermap.org/img/wn/${weather[0].icon}@2x.png"></p>
             <p class="card-text text-white">Temp: ${rounded} °F</p>
             <p class="card-text text-white">Wind: ${wind.speed} MPH</p>
             <p class="card-text text-white">Humidity: ${main.humidity} %</p>
